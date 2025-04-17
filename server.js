@@ -1,3 +1,6 @@
+require('dotenv').config();  // Загружаем переменные окружения
+console.log(process.env.OPENAI_API_KEY);  // Проверяем, что ключ загружается
+
 const express = require("express");
 const cors = require("cors");
 const { OpenAI } = require("openai");
