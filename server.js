@@ -12,6 +12,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
+console.log("OPENAI_API_KEY:", 
+process.env.OPENAI_API_KEY);
+
 app.post("/ask", async (req, res) => {
   const question = req.body.message;
 
