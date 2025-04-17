@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static(".")); // чтобы HTML/JS работали локально
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY=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,
 });
 
 app.post("/ask", async (req, res) => {
